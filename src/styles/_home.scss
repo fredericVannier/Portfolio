@@ -1,28 +1,43 @@
-.home {
+.main-container {
   height: 100vh;
+  width: 100vw;
 }
 
 .img-background {
-  position: absolute;
-  margin-top: 20vh;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
+  //   position: absolute;
+  margin-top: 10vh;
+  height: 65vh;
+  background-image: url("../img/WEBDEV.svg");
+  z-index: -1;
 }
 
 .greet-title {
-  margin-top: 14vh;
   margin-left: 20vw;
-  float: left;
+  //   float: left;
 
   .home-title {
-      font-size: 12rem;
-      font-weight: bold;
+    font-size: 12rem;
+    font-weight: bold;
 
-      span{
-          font-size: 12rem;
-      }
+    span {
+      font-size: 12rem;
+    }
+  }
+}
+
+.transition-container {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  height: 5vh;
+
+  .transition-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .transition-text {
+      color: #c6c6c6;
+    }
   }
 }

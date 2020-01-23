@@ -17,13 +17,14 @@
 
 span {
     color: $accentColor;
-}
-
-h2 {
-    @include titleSet()
-}
-
-span {
     @include accentuation()
 }
 
+.transition-text {
+    color: #C6C6C6;
+    font-weight: 600;
+}
+
+// .transition-section {
+
+// }
