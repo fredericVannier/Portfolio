@@ -6,6 +6,7 @@
 .img-background {
   margin-top: 10vh;
   height: 65vh;
+  background-size: cover;
   background-image: url("../img/WEBDEV.svg");
   z-index: -1;
 }
@@ -51,12 +52,30 @@
   color: #c6c6c6;
 }
 
-.about-container {
+.about-main-container .about-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.01);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-main-container .main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -88,6 +107,29 @@
   margin-top: 2vh;
 }
 
+.profile-section .pre-section {
+  width: 16vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.profile-section .profile-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .profile-picture {
   height: 250px;
   width: 250px;
@@ -105,9 +147,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formations .title-section {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00FFFF;
 }
 
 .formations .education-details {
@@ -119,9 +167,48 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.formations .tech-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.formations .tech-stack .tech-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.formations .tech-stack .one-tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 13vh;
+}
+
+.formations .tech-stack .one-tech .tech-name {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .navbar {
@@ -177,6 +264,69 @@
           justify-content: center;
 }
 
+.projects-main-container {
+  height: 60vh;
+  background-image: url("../img/PROJECTS.svg");
+  background-size: cover;
+  z-index: -1;
+}
+
+.projects-main-container .projects-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 7%;
+}
+
+.projects-main-container .projects-section #project-picture1 {
+  height: 350px;
+  width: 350px;
+  background-image: url("../img/spaceExplorer.png");
+  background-size: cover;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.projects-main-container .projects-section #project-picture1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.projects-main-container .projects-section #project-picture2 {
+  height: 350px;
+  width: 350px;
+  background-image: url("../img/petsit.png");
+  background-size: cover;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.projects-main-container .projects-section #project-picture2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.projects-main-container .projects-section #project-picture3 {
+  height: 350px;
+  width: 350px;
+  background-image: url("../img/topit.png");
+  background-size: cover;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.projects-main-container .projects-section #project-picture3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.contact-main-container {
+  height: 90vh;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -184,7 +334,6 @@
 }
 
 .App {
-  height: 2000px;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#040405), to(#1B1E29));
   background-image: linear-gradient(to top right, #040405, #1B1E29);
 }

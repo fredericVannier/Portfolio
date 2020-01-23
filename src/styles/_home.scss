@@ -7,13 +7,13 @@
   //   position: absolute;
   margin-top: 10vh;
   height: 65vh;
+  background-size: cover;
   background-image: url("../img/WEBDEV.svg");
   z-index: -1;
 }
 
 .greet-title {
   margin-left: 20vw;
-  //   float: left;
 
   .home-title {
     font-size: 12rem;

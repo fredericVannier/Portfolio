@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.009" height="20.345" viewBox="0 0 17.009 20.345">
+  <g id="map-pin" transform="translate(-2)">
+    <path id="Tracé_2" data-name="Tracé 2" d="M18.009,8.5c0,5.837-7.5,10.84-7.5,10.84S3,14.342,3,8.5a7.5,7.5,0,1,1,15.009,0Z" fill="none" stroke="#13e0c8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="2.5" cy="2.5" r="2.5" transform="translate(8 6.345)" stroke-width="2" stroke="#13e0c8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

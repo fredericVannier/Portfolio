@@ -2,6 +2,8 @@
 @import 'styles/home';
 @import 'styles/about';
 @import 'styles/navbar';
+@import 'styles/projects';
+@import 'styles/contact';
 
 * {
     margin: 0;
@@ -11,7 +13,6 @@
 }
 
 .App {
-    height: 2000px;
     background-image: linear-gradient(to top right, $primaryColor, $secondaryColor);
 }
 

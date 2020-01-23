@@ -3,11 +3,18 @@ import React, { Component } from "react";
 export class About extends Component {
   render() {
     return (
+        <div className="about-main-container">
+
+        
       <div className="about-container">
+          <div className="main-section">
         <div className="profile-section">
           <div className="profile-picture"></div>
-          <div className="profil-information">
-            <h4>Frederic Vannier | 27 | Barcelona</h4>
+          <div className="profile-information">
+            <div className="pre-section">
+              <h4>Frederic Vannier | 27 | Barcelona</h4>
+              <img src="./map-pin.svg" alt="location pin" />
+            </div>
             <p id="description">
               Web developper with a background in graphic design, I've always
               been passionated by learning and creating. Programming came to me
@@ -19,7 +26,7 @@ export class About extends Component {
         </div>
         <div className="education-section">
           <div className="formations">
-            <h2>Education</h2>
+            <h2 className="title-section">Education</h2>
 
             <div className="education-details">
               <div className="details-section">
@@ -39,8 +46,57 @@ export class About extends Component {
                 </p>
               </div>
             </div>
+
+            <h2 className="title-section">Skills</h2>
+
+            <div className="tech-stack">
+              <div className="tech-section">
+                <div className="one-tech">
+                  <img src="./html5.svg" alt="logo" />
+                  <p className="tech-name">HTML5</p>
+                </div>
+                <div className="one-tech">
+                  <img src="./css3.svg" alt="logo" />
+                  <p className="tech-name">CSS3</p>
+                </div>
+                <div className="one-tech">
+                  <img src="./javascript.svg" alt="logo" />
+                  <p className="tech-name">Javascript</p>
+                </div>
+                <div className="one-tech">
+                  <img src="./sass.svg" alt="logo" />
+                  <p className="tech-name">SASS</p>
+                </div>
+                <div className="one-tech">
+                  <img src="./mongodb.svg" alt="logo" />
+                  <p className="tech-name">MongoDB</p>
+                </div>
+                <div className="one-tech">
+                  <img src="./express.svg" alt="logo" />
+                  <p className="tech-name">Express</p>
+                </div>
+                <div className="one-tech">
+                  <img src="./react.svg" alt="logo" />
+                  <p className="tech-name">React</p>
+                </div>
+                <div className="one-tech">
+                  <img src="./nodejs.svg" alt="logo" />
+                  <p className="tech-name">Node JS</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        </div>
+
+        <div className="transition-container">
+          <div className="transition-section">
+            <p className="transition-text">Learn more about me</p>
+            <img src="./arrow-down.svg" alt="arrow" />
+          </div>
+        </div>
+
+      </div>
       </div>
     );
   }
