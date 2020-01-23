@@ -1,0 +1,28 @@
+.home {
+  height: 100vh;
+}
+
+.img-background {
+  position: absolute;
+  margin-top: 20vh;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.greet-title {
+  margin-top: 14vh;
+  margin-left: 20vw;
+  float: left;
+
+  .home-title {
+      font-size: 12rem;
+      font-weight: bold;
+
+      span{
+          font-size: 12rem;
+      }
+  }
+}

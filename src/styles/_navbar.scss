@@ -1,0 +1,26 @@
+.navbar {
+    padding-top: 5vh;
+    width: 100%;
+    @include flexbox-row();
+    justify-content: space-between;
+}
+
+.nav-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-nav {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+

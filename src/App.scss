@@ -1,0 +1,29 @@
+@import 'styles/variables';
+@import 'styles/home';
+@import 'styles/about';
+@import 'styles/navbar';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.App {
+    height: 2000px;
+    background-image: linear-gradient(to top right, $primaryColor, $secondaryColor);
+}
+
+span {
+    color: $accentColor;
+}
+
+h2 {
+    @include titleSet()
+}
+
+span {
+    @include accentuation()
+}
+

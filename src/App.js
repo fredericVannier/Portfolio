@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { Component } from "react";
+import { Switch, Route } from "react-router-dom";
 
-import './App.css';
-import Home from './Pages/Home';
+import "./App.scss";
+import Home from "./Pages/Home";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <h1>My portfolio</h1>
-      <Home />
+      {/* <Switch> */}
+        <Navbar />
+        <Home />
+      {/* </Switch> */}
     </div>
   );
 }

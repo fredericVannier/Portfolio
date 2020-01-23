@@ -1,0 +1,114 @@
+.home {
+  height: 100vh;
+}
+
+.img-background {
+  position: absolute;
+  margin-top: 20vh;
+}
+
+.img-background img {
+  width: 100%;
+  height: auto;
+}
+
+.greet-title {
+  margin-top: 14vh;
+  margin-left: 20vw;
+  float: left;
+}
+
+.greet-title .home-title {
+  font-size: 12rem;
+  font-weight: bold;
+}
+
+.greet-title .home-title span {
+  font-size: 12rem;
+}
+
+.about {
+  height: 100vh;
+}
+
+.navbar {
+  padding-top: 5vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo-nav {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: white;
+}
+
+.App {
+  height: 2000px;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#040405), to(#1B1E29));
+  background-image: linear-gradient(to top right, #040405, #1B1E29);
+}
+
+span {
+  color: #00FFFF;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+span {
+  font-size: 3rem;
+  color: #00FFFF;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=App.css.map */

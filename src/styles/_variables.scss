@@ -1,0 +1,20 @@
+$primaryColor: #040405;
+$secondaryColor: #1B1E29;
+$accentColor: #00FFFF;
+
+@mixin titleSet {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@mixin accentuation {
+    font-size: 3rem;
+    color: $accentColor;
+    font-weight: bolder;
+}
+
+@mixin flexbox-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
