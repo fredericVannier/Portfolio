@@ -52,8 +52,76 @@
 }
 
 .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.01);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 55vh;
+}
+
+.profile-section #description {
+  width: 25vh;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.profile-picture {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  background-size: cover;
+  background-image: url("../img/profilePicture.png");
+}
+
+.formations {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.formations .education-details {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar {
@@ -112,7 +180,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 16px;
   color: white;
 }
 
