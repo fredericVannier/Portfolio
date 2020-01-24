@@ -75,7 +75,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 80%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -155,7 +155,7 @@
 .formations .title-section {
   font-size: 3rem;
   font-weight: bold;
-  color: #00FFFF;
+  color: #00ffff;
 }
 
 .formations .education-details {
@@ -323,8 +323,159 @@
           transform: scale(1.1);
 }
 
+.projects-main-container .transition-section {
+  margin-top: 13vh;
+}
+
 .contact-main-container {
-  height: 90vh;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: linear-gradient(-45deg, #000000, #192c33);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 8s ease infinite;
+          animation: gradient 8s ease infinite;
+}
+
+.contact-main-container .contact-text {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.contact-main-container .contact-text p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contact-main-container .icon-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact-main-container .icon-section .one-link {
+  border: solid 3px #00ffff;
+  -webkit-box-shadow: inset 0 0 0 4px #00ffff;
+          box-shadow: inset 0 0 0 4px #00ffff;
+  color: #00ffff;
+  -webkit-transition: color 0.15s 0.05s;
+  transition: color 0.15s 0.05s;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+
+.contact-main-container .icon-section .one-link::before, .contact-main-container .icon-section .one-link::after {
+  border: 0 solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.contact-main-container .icon-section .one-link::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.contact-main-container .icon-section .one-link::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.contact-main-container .icon-section .one-link:hover {
+  color: #f7b72f;
+}
+
+.contact-main-container .icon-section .one-link:hover::before, .contact-main-container .icon-section .one-link:hover::after {
+  border-color: #f7b72f;
+  -webkit-transition: border-color 0s, width 0.15s, height 0.15s;
+  transition: border-color 0s, width 0.15s, height 0.15s;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-main-container .icon-section .one-link:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.15s;
+          transition-delay: 0s, 0s, 0.15s;
+}
+
+.contact-main-container .icon-section .one-link:hover::after {
+  -webkit-transition-delay: 0s, 0.15s, 0s;
+          transition-delay: 0s, 0.15s, 0s;
+}
+
+.contact-main-container .icon-section .one-link:focus {
+  outline: 2px dotted #00ffff;
+}
+
+.contact-main-container .icon-section .one-link .link-elements {
+  width: 13vw;
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-main-container .icon-section .one-link .link-elements h3 {
+  font-size: 1.4rem;
+}
+
+.contact-main-container .icon-section a {
+  text-decoration: none;
+}
+
+.contact-main-container .icon-section a:hover {
+  color: #00ffff;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 * {
@@ -334,19 +485,74 @@
 }
 
 .App {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#040405), to(#1B1E29));
-  background-image: linear-gradient(to top right, #040405, #1B1E29);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#040405), to(#1b1e29));
+  background-image: linear-gradient(to top right, #040405, #1b1e29);
 }
 
 span {
-  color: #00FFFF;
+  color: #00ffff;
   font-size: 3rem;
-  color: #00FFFF;
+  color: #00ffff;
   font-weight: bolder;
 }
 
 .transition-text {
-  color: #C6C6C6;
-  font-weight: 600;
+  color: #c6c6c6;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: -webkit-gradient(linear, left top, right top, from(#a1a1a1), color-stop(white), to(#a1a1a1));
+  background: linear-gradient(90deg, #a1a1a1, white, #a1a1a1);
+  background-size: 80%;
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: -600%;
+  }
+  100% {
+    background-position: 600%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: -600%;
+  }
+  100% {
+    background-position: 600%;
+  }
+}
+
+.slide-top {
+  margin-top: 30px;
+  animation: slide-top 1.5s infinite alternate-reverse both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
 }
 /*# sourceMappingURL=App.css.map */

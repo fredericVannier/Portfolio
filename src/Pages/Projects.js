@@ -11,6 +11,13 @@ export class Projects extends Component {
         </div>
 
         <div className="projects-bkg"></div>
+
+        <div className="transition-container project-transition">
+            <div className="transition-section">
+              <p className="transition-text">Wanna talk?</p>
+              <img src="./arrow-down.svg" className="slide-top" alt="arrow" />
+            </div>
+          </div>
       </div>
     );
   }

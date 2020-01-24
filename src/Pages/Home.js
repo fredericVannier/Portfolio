@@ -40,7 +40,7 @@ export class Home extends Component {
         <div className="transition-container">
           <div className="transition-section">
             <p className="transition-text">Learn more about me</p>
-            <img src="./arrow-down.svg" alt="arrow" />
+            <img src="./arrow-down.svg" className="slide-top" alt="arrow" />
           </div>
         </div>
       </div>
