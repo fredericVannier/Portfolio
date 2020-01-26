@@ -4,13 +4,15 @@
 @import "styles/navbar";
 @import "styles/projects";
 @import "styles/contact";
+@import "src/index.scss";
 
 * {
   margin: 0;
   padding: 0;
-  // font-size: 16px;
   color: white;
-  cursor: url("cursor.png") 20 20, auto;
+  font-family: "Roboto";
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  cursor: url("cursor.png"), auto;
 }
 
 .App {
@@ -20,15 +22,12 @@
     $secondaryColor
   );
   height: 100%;
-
-  // &:hover {
-  //   cursor: url("./img/cursor2.svg");
-  // }
 }
 
 span {
   color: $accentColor;
-  @include accentuation();
+  font-weight: bold;
+  // @include accentuation();
 }
 
 .transition-text {
@@ -90,3 +89,13 @@ span {
     transform: translateY(-15px);
   }
 }
+
+// @media only screen and (max-width: 768px) {
+
+//   .transition-section {
+
+//     &.open {
+//       visibility: hidden;
+//     }
+//   }
+// }

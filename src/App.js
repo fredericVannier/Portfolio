@@ -10,6 +10,7 @@ import Contact from "./Pages/Contact";
 import ProjectOne from "./Pages/ProjectOne";
 // import SectionTransition from './components/SectionTransition'
 
+
 function App() {
   return (
     <div className="App">

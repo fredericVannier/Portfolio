@@ -3,14 +3,37 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import About from "../Pages/About";
 
 export class Navbar extends Component {
+  state = {
+    active: false
+  };
+
+  toggleMenu = () => {
+    this.setState({ active: !this.state.active });
+  };
+
   render() {
     return (
       <div className="navbar">
+        <div className="menu-btn">
+          <span
+            className={
+              this.state.active ? "menu-btn-burger open" : "menu-btn-burger"
+            }
+            onClick={() => this.toggleMenu()}
+          ></span>
+        </div>
+
         <div className="logo-nav">
           <img src="./Logo2020.svg" alt="FV logo" />
         </div>
-        <div className="nav-container">
-          <div className="nav-section">
+        <div
+          className={this.state.active ? "nav-container open" : "nav-container"}
+          onClick={() => this.toggleMenu()}
+        >
+          <div
+            className={this.state.active ? "nav-section open" : "nav-section"}
+            onClick={() => this.toggleMenu()}
+          >
             <p className="section-name">Home</p>
           </div>
           <Link
@@ -18,20 +41,26 @@ export class Navbar extends Component {
             to="about-main-container"
             spy={true}
             smooth={true}
-            duration={500}
+            duration={600}
           >
-            <div className="nav-section">
+            <div
+              className={this.state.active ? "nav-section open" : "nav-section"}
+              onClick={() => this.toggleMenu()}
+            >
               <p className="section-name">About</p>
             </div>
           </Link>
           <Link
             activeClass="active"
-            to="projects-main-container"
+            to="projects-section"
             spy={true}
             smooth={true}
-            duration={500}
+            duration={600}
           >
-            <div className="nav-section">
+            <div
+              className={this.state.active ? "nav-section open" : "nav-section"}
+              onClick={() => this.toggleMenu()}
+            >
               <p className="section-name">Projects</p>
             </div>
           </Link>
@@ -40,9 +69,12 @@ export class Navbar extends Component {
             to="contact-main-container"
             spy={true}
             smooth={true}
-            duration={500}
+            duration={600}
           >
-            <div className="nav-section">
+            <div
+              className={this.state.active ? "nav-section open" : "nav-section"}
+              onClick={() => this.toggleMenu()}
+            >
               <p className="section-name">Contact</p>
             </div>
           </Link>

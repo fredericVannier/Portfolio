@@ -1,16 +1,15 @@
 .about-main-container {
-
   height: 100vh;
-  
-    .about-container{
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        background-color: rgba($color: #ffffff, $alpha: 0.01);
-        justify-content: space-evenly;
-        align-items: center;
+  width: 100vw;
 
-    }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgba($color: #ffffff, $alpha: 0.01);
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
   .main-section {
     display: flex;
@@ -29,13 +28,13 @@
   height: 55vh;
 
   #description {
-    width: 25vh;
-    text-align: center;
+    width: 50%;
+    text-align: justify;
     margin-top: 2vh;
   }
 
   .pre-section {
-    width: 16vw;
+    width: 50%;
     display: flex;
     justify-content: space-evenly;
   }
@@ -58,6 +57,7 @@
 .formations {
   height: 50vh;
   width: 50vw;
+  margin-right: 10vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -80,9 +80,9 @@
     align-content: center;
 
     .tech-section {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
     }
 
     .one-tech {
@@ -103,6 +103,81 @@
 
       .logo-tech-special {
         margin-top: 5vh;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 813px) {
+  h3 {
+    font-size: 1rem;
+  }
+  .about-main-container {
+    height: 100vh;
+    width: 100vw;
+
+    .about-container {
+
+      width: 100vw;
+      .main-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .profile-section {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 35vh;
+
+          #description {
+            width: 90%;
+            text-align: justify;
+            margin-top: 2vh;
+          }
+
+          .pre-section {
+            width: 80%;
+            margin-top: 2vh;
+            display: flex;
+            justify-content: space-evenly;
+          }
+
+          .profile-information {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            margin: 0 auto;
+          }
+
+          .profile-picture {
+            visibility: hidden;
+          }
+        }
+
+        .education-section {
+          height: 65vh;
+          width: 90%;
+
+          .formations {
+            width: 100%;
+
+            .title-section {
+              font-size: 1.5rem;
+            }
+
+            .education-details {
+
+              margin-top: 1rem;
+              .details-section {
+                margin-top: 1rem;
+              }
+
+            }
+          }
+        }
       }
     }
   }

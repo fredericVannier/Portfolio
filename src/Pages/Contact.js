@@ -8,10 +8,13 @@ export class contact extends Component {
           <p>
             I have always been interested by design, the digital market and the
             tech industry, but I am open to many other fields. I keep my skills
-            up to date and try to create attractive and creative projects. As
-            much as I can If you have a project in mind and would like to share
-            it with me, feel free to contact me. I would be pleased to
-            collaborate with awesome people.{" "}
+            up to date and try to{" "}
+            <span> create attractive and creative projects</span> as much as I
+            can.
+            <br />
+            <br /> If you have a project in mind and would like to share it with
+            me, feel free to contact me. I would be pleased{" "}
+            <span>to collaborate with awesome people</span>.{" "}
           </p>
         </div>
 
@@ -25,20 +28,23 @@ export class contact extends Component {
                 </div>
               </div>
             </a>
-            <a href="https://www.linkedin.com/in/frederic-vannier/" target="_blank">
-            <div className="one-link">
-              <div className="link-elements">
-                <img src="./linkedin.svg" alt="github-logo" />
-                <h3>Linkedin</h3>
+            <a
+              href="https://www.linkedin.com/in/frederic-vannier/"
+              target="_blank"
+            >
+              <div className="one-link">
+                <div className="link-elements">
+                  <img src="./linkedin.svg" alt="github-logo" />
+                  <h3>Linkedin</h3>
+                </div>
               </div>
-            </div>
             </a>
-            <div className="one-link">
+            {/* <div className="one-link">
               <div className="link-elements">
                 <img src="./gmail.svg" alt="github-logo" />
                 <h3>Gmail</h3>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

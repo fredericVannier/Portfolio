@@ -293,7 +293,6 @@
   background-size: contain;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: 25%;
 }
 
 .projects-main-container .projects-section {
@@ -303,48 +302,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-top: 20%;
-}
-
-.projects-main-container .projects-section #project-picture1 {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-
-.projects-main-container .projects-section #project-picture1:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.projects-main-container .projects-section #project-picture2 {
-  height: 350px;
-  width: 350px;
-  background-image: url("../img/petsit.png");
-  background-size: cover;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-
-.projects-main-container .projects-section #project-picture2:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.projects-main-container .projects-section #project-picture3 {
-  height: 350px;
-  width: 350px;
-  background-image: url("../img/topit.png");
-  background-size: cover;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-
-.projects-main-container .projects-section #project-picture3:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  padding-top: 5vh;
 }
 
 .projects-main-container .projects-section .project {
@@ -355,8 +313,56 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25vw;
   text-align: center;
+}
+
+.projects-main-container .projects-section .project #project-picture1 {
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+  background-image: url("../img/spaceExplorer.png");
+  background-size: cover;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.projects-main-container .projects-section .project #project-picture1:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.projects-main-container .projects-section .project #project-picture2 {
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+  background-image: url("../img/petsit.png");
+  background-size: cover;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.projects-main-container .projects-section .project #project-picture2:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.projects-main-container .projects-section .project #project-picture3 {
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+  background-image: url("../img/topit.png");
+  background-size: cover;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.projects-main-container .projects-section .project #project-picture3:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .projects-main-container .projects-section .project .project-title {
@@ -545,7 +551,9 @@
   margin: 0;
   padding: 0;
   color: white;
-  cursor: url("cursor.png") 20 20, auto;
+  font-family: "Roboto";
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  cursor: url("cursor.png"), auto;
 }
 
 .App {
@@ -556,9 +564,7 @@
 
 span {
   color: #00ffff;
-  font-size: 3rem;
-  color: #00ffff;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .transition-text {

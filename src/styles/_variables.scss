@@ -1,6 +1,7 @@
 $primaryColor: #040405;
 $secondaryColor: #1b1e29;
 $accentColor: #00ffff;
+$secondAccentColor: #ffbb00;
 
 @mixin titleSet {
   font-size: 3rem;
@@ -11,6 +12,10 @@ $accentColor: #00ffff;
   font-size: 3rem;
   color: $accentColor;
   font-weight: bolder;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out
 }
 
 @mixin flexbox-row {

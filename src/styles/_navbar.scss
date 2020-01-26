@@ -4,6 +4,10 @@
   @include flexbox-row();
   justify-content: space-between;
 
+  .menu-btn {
+    position: absolute;
+  }
+
   .nav-container {
     width: 50%;
     display: flex;
@@ -16,12 +20,12 @@
       justify-content: space-between;
 
       .section-name {
-          font-size: 1.2rem;
-          text-transform: uppercase;
+        font-size: 1.2rem;
+        text-transform: uppercase;
 
-          &:hover {
-              color: $accentColor
-          }
+        &:hover {
+          color: $accentColor;
+        }
       }
     }
   }
@@ -30,5 +34,123 @@
     width: 20%;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 813px) {
+
+  p {
+    font-size: .9rem;
+  }
+
+  .logo-nav {
+    width: 20%;
+    display: flex;
+    margin-left: 2rem;
+    justify-content: center;
+    height: 70px;
+    width: auto;
+  }
+
+  .menu-btn {
+
+    position: absolute;
+    z-index: 1;
+    right: 2rem;
+    top: 2rem;
+    height: 20px;
+    width: 28px;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    @include transition-ease();
+
+    .menu-btn-burger {
+      visibility: visible;
+      position: absolute;
+      right: 0;
+      top: 0.5rem;
+      width: 40px;
+      height: 4px;
+      background: $accentColor;
+      @include transition-ease();
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        width: 40px;
+        height: 4px;
+        background: $accentColor;
+        @include transition-ease();
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        width: 27px;
+        height: 4px;
+        background: $accentColor;
+        @include transition-ease();
+      }
+
+      &.open {
+        transform: rotate(720deg);
+        background: transparent;
+
+        &::before {
+          transform: rotate(45deg) translate(11px, 9px);
+        }
+
+        &::after {
+          width: 40px;
+          transform: rotate(-45deg) translate(5px, -3px);
+        }
+      }
+    }
+  }
+
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    visibility: hidden;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $primaryColor;
+    list-style: none;
+    padding-right: 1rem;
+    transform: translateX(-100%);
+    @include transition-ease();
+
+    &.open {
+      visibility: visible;
+      transform: translateY(0);
+      width: 100vw;
+    }
+
+    .nav-section {
+      transform: translateX(-100vw);
+      @include transition-ease();
+
+      &.open {
+        transform: translateX(0);
+      }
+
+      .section-name {
+        color: $accentColor;
+        display: inline-block;
+        font-size: 2rem;
+        padding: 2rem 0;
+        font-weight: 400;
+        @include transition-ease();
+      }
+    }
   }
 }
