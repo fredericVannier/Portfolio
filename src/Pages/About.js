@@ -16,9 +16,12 @@ export class About extends Component {
                 <p id="description">
                   Web developper with a background in graphic design, I've
                   always been passionated by learning and creating. Programming
-                  came to me as the logical next step in my carrer path. Driven
-                  by a strong will to provide the best user experience with a
-                  neat design, I'm always seeking ways to make improvements.
+                  came to me as the logical next step in my carrer path.
+                  <br />
+                  <br />
+                  Driven by a strong will to provide the best user experience
+                  with a neat design, I'm always seeking ways to make
+                  improvements.
                 </p>
               </div>
             </div>
@@ -52,35 +55,35 @@ export class About extends Component {
                 <div className="tech-stack">
                   <div className="tech-section">
                     <div className="one-tech">
-                      <img src="./html5.svg" alt="logo" />
+                      <img src="./html5.svg" className="logo-tech" alt="logo" />
                       <p className="tech-name">HTML5</p>
                     </div>
                     <div className="one-tech">
-                      <img src="./css3.svg" alt="logo" />
+                      <img src="./css3.svg" className="logo-tech" alt="logo" />
                       <p className="tech-name">CSS3</p>
                     </div>
                     <div className="one-tech">
-                      <img src="./javascript.svg" alt="logo" />
+                      <img src="./javascript.svg" className="logo-tech" alt="logo" />
                       <p className="tech-name">Javascript</p>
                     </div>
                     <div className="one-tech">
-                      <img src="./sass.svg" alt="logo" />
+                      <img src="./sass.svg"  className="logo-tech" alt="logo" />
                       <p className="tech-name">SASS</p>
                     </div>
                     <div className="one-tech">
-                      <img src="./mongodb.svg" alt="logo" />
+                      <img src="./mongodb.svg" className="logo-tech" alt="logo" />
                       <p className="tech-name">MongoDB</p>
                     </div>
                     <div className="one-tech">
-                      <img src="./express.svg" alt="logo" />
+                      <img src="./express.svg" className="logo-tech-special" alt="logo" />
                       <p className="tech-name">Express</p>
                     </div>
                     <div className="one-tech">
-                      <img src="./react.svg" alt="logo" />
+                      <img src="./react.svg" className="logo-tech" alt="logo" />
                       <p className="tech-name">React</p>
                     </div>
                     <div className="one-tech">
-                      <img src="./nodejs.svg" alt="logo" />
+                      <img src="./nodejs.svg" className="logo-tech" alt="logo" />
                       <p className="tech-name">Node JS</p>
                     </div>
                   </div>

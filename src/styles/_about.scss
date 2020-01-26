@@ -1,5 +1,7 @@
 .about-main-container {
 
+  height: 100vh;
+  
     .about-container{
         display: flex;
         flex-direction: column;
@@ -55,6 +57,7 @@
 
 .formations {
   height: 50vh;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -85,13 +88,21 @@
     .one-tech {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
       height: 13vh;
 
       .tech-name {
         font-weight: bold;
         font-size: 1.2rem;
+      }
+
+      .logo-tech {
+        margin-top: 3vh;
+      }
+
+      .logo-tech-special {
+        margin-top: 5vh;
       }
     }
   }

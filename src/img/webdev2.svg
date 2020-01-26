@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1868" height="676" viewBox="0 0 1868 676">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: aqua;
+        font-size: 350px;
+        font-family: Roboto-Black, Roboto;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_6" data-name="Groupe 6" transform="translate(-26 -383)">
+    <text id="DEVELOPER" class="cls-1" transform="translate(27 973)"><tspan x="0" y="0">DEVELOPER</tspan></text>
+    <text id="WEB" class="cls-1" transform="translate(1181 709)"><tspan x="0" y="0">WEB</tspan></text>
+  </g>
+</svg>

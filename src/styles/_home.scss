@@ -7,10 +7,29 @@
   //   position: absolute;
   margin-top: 10vh;
   height: 65vh;
-  background-size: cover;
-  background-image: url("../img/WEBDEV.svg");
-  z-index: -1;
+  background-size: contain;
+  width: 100%;
+  background-image: url("../img/webdev5_animated.svg");
+  background-repeat: no-repeat;
+
 }
+
+
+// .img-background {
+//   //   position: absolute;
+//   margin-top: 10vh;
+//   height: 65vh;
+//   background-size: cover;
+//   width: 100%;
+//   background-image: url("../img/webdev3.svg");
+//   // z-index: -1;
+
+//   .path {
+//     stroke-dasharray: 20;
+//   }
+// }
+
+
 
 .greet-title {
   margin-left: 20vw;

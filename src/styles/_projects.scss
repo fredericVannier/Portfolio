@@ -1,23 +1,24 @@
 .projects-main-container {
-  height: 60vh;
+  height: 100vh;
   background-image: url("../img/PROJECTS.svg");
-  background-size: cover;
-  z-index: -1;
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 25%;
 
   .projects-section {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 7%;
+    margin-top: 20%;
 
     #project-picture1 {
-      height: 350px;
-      width: 350px;
-      background-image: url("../img/spaceExplorer.png");
+      height: 100%;
+      width: 100%;
       background-size: cover;
       transition: all 0.1s ease-in-out;
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
     }
 
@@ -29,7 +30,7 @@
       transition: all 0.1s ease-in-out;
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
     }
 
@@ -41,12 +42,42 @@
       transition: all 0.1s ease-in-out;
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
+      }
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      width: 20vw;
+      text-align: center;
+
+      .project-title {
+        margin-top: 4vh;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+      }
+
+      .project-details {
+        margin-top: 2vh;
+      }
+
+      .links-section {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3vh;
+
+        .project-links {
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: rgb(255, 188, 2);
+        }
       }
     }
   }
 
   .transition-section {
-      margin-top: 13vh;
+    margin-top: 13vh;
   }
 }

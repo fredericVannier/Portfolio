@@ -6,9 +6,10 @@
 .img-background {
   margin-top: 10vh;
   height: 65vh;
-  background-size: cover;
-  background-image: url("../img/WEBDEV.svg");
-  z-index: -1;
+  background-size: contain;
+  width: 100%;
+  background-image: url("../img/webdev5_animated.svg");
+  background-repeat: no-repeat;
 }
 
 .greet-title {
@@ -50,6 +51,10 @@
 
 .transition-container .transition-section .transition-text {
   color: #c6c6c6;
+}
+
+.about-main-container {
+  height: 100vh;
 }
 
 .about-main-container .about-container {
@@ -140,6 +145,7 @@
 
 .formations {
   height: 50vh;
+  width: 50vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,9 +203,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -209,6 +215,14 @@
 .formations .tech-stack .one-tech .tech-name {
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.formations .tech-stack .one-tech .logo-tech {
+  margin-top: 3vh;
+}
+
+.formations .tech-stack .one-tech .logo-tech-special {
+  margin-top: 5vh;
 }
 
 .navbar {
@@ -229,7 +243,7 @@
           justify-content: space-between;
 }
 
-.nav-container {
+.navbar .nav-container {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,7 +256,7 @@
           justify-content: space-evenly;
 }
 
-.nav-section {
+.navbar .nav-container .nav-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,7 +268,16 @@
           justify-content: space-between;
 }
 
-.logo-nav {
+.navbar .nav-container .nav-section .section-name {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.navbar .nav-container .nav-section .section-name:hover {
+  color: #00ffff;
+}
+
+.navbar .logo-nav {
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,10 +288,12 @@
 }
 
 .projects-main-container {
-  height: 60vh;
+  height: 100vh;
   background-image: url("../img/PROJECTS.svg");
-  background-size: cover;
-  z-index: -1;
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 25%;
 }
 
 .projects-main-container .projects-section {
@@ -278,21 +303,20 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-top: 7%;
+  margin-top: 20%;
 }
 
 .projects-main-container .projects-section #project-picture1 {
-  height: 350px;
-  width: 350px;
-  background-image: url("../img/spaceExplorer.png");
+  height: 100%;
+  width: 100%;
   background-size: cover;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
 
 .projects-main-container .projects-section #project-picture1:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .projects-main-container .projects-section #project-picture2 {
@@ -305,8 +329,8 @@
 }
 
 .projects-main-container .projects-section #project-picture2:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .projects-main-container .projects-section #project-picture3 {
@@ -319,8 +343,47 @@
 }
 
 .projects-main-container .projects-section #project-picture3:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.projects-main-container .projects-section .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20vw;
+  text-align: center;
+}
+
+.projects-main-container .projects-section .project .project-title {
+  margin-top: 4vh;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.projects-main-container .projects-section .project .project-details {
+  margin-top: 2vh;
+}
+
+.projects-main-container .projects-section .project .links-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 3vh;
+}
+
+.projects-main-container .projects-section .project .links-section .project-links {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffbc02;
 }
 
 .projects-main-container .transition-section {
@@ -482,11 +545,13 @@
   margin: 0;
   padding: 0;
   color: white;
+  cursor: url("cursor.png") 20 20, auto;
 }
 
 .App {
   background-image: -webkit-gradient(linear, left bottom, right top, from(#040405), to(#1b1e29));
   background-image: linear-gradient(to top right, #040405, #1b1e29);
+  height: 100%;
 }
 
 span {
@@ -529,9 +594,34 @@ span {
   }
 }
 
+.path {
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  -webkit-animation: draw 20s linear forwards;
+          animation: draw 20s linear forwards;
+}
+
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 .slide-top {
   margin-top: 30px;
-  animation: slide-top 1.5s infinite alternate-reverse both;
+  animation: slide-top 1s infinite alternate-reverse both;
+}
+
+.squiggle {
+  --stroke-dashoffset: 200;
+  stroke-dasharray: 50;
+  stroke-dashoffset: var(--stroke-dashoffset);
 }
 
 @-webkit-keyframes slide-top {
