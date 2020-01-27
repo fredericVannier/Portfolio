@@ -127,22 +127,22 @@ export class Projects extends Component {
               </div>
             </div>
           </div>
-        </div>
 
-        <Link
-          activeClass="active"
-          to="contact-main-container"
-          spy={true}
-          smooth={true}
-          duration={600}
-        >
-          <div className="transition-container project-transition">
-            <div className="transition-section">
-              <p className="transition-text">Wanna talk?</p>
-              <img src="./arrow-down.svg" className="slide-top" alt="arrow" />
+          <Link
+            activeClass="active"
+            to="contact-main-container"
+            spy={true}
+            smooth={true}
+            duration={600}
+          >
+            <div className="transition-container project-transition">
+              <div className="transition-section">
+                <p className="transition-text">Wanna talk?</p>
+                <img src="./arrow-down.svg" className="slide-top" alt="arrow" />
+              </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
     );
   }
