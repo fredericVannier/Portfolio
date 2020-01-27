@@ -117,17 +117,18 @@
     width: 100vw;
 
     .about-container {
-      height: 110vh;
+      height: 100%;
       width: 100vw;
 
-      .about-transition {
-        margin-top: 5vh;
-      }
+      // .about-transition {
+      //   margin-top: 5vh;
+      // }
 
       .main-section {
         display: flex;
         flex-direction: column;
         width: 100%;
+        height: 70%;
 
         .profile-section {
           display: flex;
