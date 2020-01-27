@@ -7,8 +7,6 @@ import Navbar from "./components/Navbar";
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
-import ProjectOne from "./Pages/ProjectOne";
-// import SectionTransition from './components/SectionTransition'
 
 
 function App() {

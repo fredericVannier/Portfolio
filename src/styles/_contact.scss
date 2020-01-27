@@ -55,19 +55,67 @@
   }
 
   background: linear-gradient(-45deg, #000000, #192c33);
-    background-size: 400% 400%;
-    animation: gradient 8s ease infinite;
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
 
-@keyframes gradient {
+  @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
     }
     50% {
-        background-position: 100% 50%;
+      background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
     }
+  }
 }
 
+@media only screen and (max-width: 813px) {
+  .contact-main-container {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .contact-text {
+      width: 90%;
+      margin: 0 auto;
+
+      p {
+        text-align: justify;
+        font-size: 0.9rem;
+      }
+    }
+
+    .icon-section {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 200px;
+      align-items: center;
+      margin: 0 auto;
+
+      .one-link {
+        width: 120px;
+        height: 30px;
+
+        .link-elements {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .logo-platforms {
+            height: 30px;
+          }
+
+          h3 {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
 }

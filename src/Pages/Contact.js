@@ -23,7 +23,11 @@ export class contact extends Component {
             <a href="https://github.com/Fred011" target="_blank">
               <div className="one-link">
                 <div className="link-elements">
-                  <img src="./github.svg" alt="github-logo" />
+                  <img
+                    src="./github.svg"
+                    className="logo-platforms"
+                    alt="github-logo"
+                  />
                   <h3>Github</h3>
                 </div>
               </div>
@@ -34,17 +38,15 @@ export class contact extends Component {
             >
               <div className="one-link">
                 <div className="link-elements">
-                  <img src="./linkedin.svg" alt="github-logo" />
+                  <img
+                    src="./linkedin.svg"
+                    className="logo-platforms"
+                    alt="github-logo"
+                  />
                   <h3>Linkedin</h3>
                 </div>
               </div>
             </a>
-            {/* <div className="one-link">
-              <div className="link-elements">
-                <img src="./gmail.svg" alt="github-logo" />
-                <h3>Gmail</h3>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
