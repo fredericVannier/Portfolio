@@ -16,8 +16,8 @@ export class About extends Component {
                   <img src="./map-pin.svg" alt="location pin" />
                 </div>
                 <p id="description">
-                  Web developper with a background in graphic design, I've
-                  always been passionated by learning and creating. Programming
+                  Web developer with a background in graphic design, I've
+                  always been passionate by learning and creating. Programming
                   came to me as the logical next step in my career path.
                 </p>
               </div>
@@ -32,12 +32,12 @@ export class About extends Component {
                     <p className="degree-description">
                       Intensive courses to learn Front-end design, Back-end
                       architecture fundamentals using top-notch technologies and
-                      become full-stack developer.
+                      become a full-stack developer.
                     </p>
                   </div>
                   <div className="details-section">
                     <h3>
-                      Two years degree in Communication and Marketing | 2014
+                      Degree in Communication and Marketing | 2014
                     </h3>
                     <p className="degree-description">
                       Intensive courses to learn Front-end design, Back-end
