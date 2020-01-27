@@ -20,7 +20,11 @@ export class contact extends Component {
 
         <div className="contact-icons">
           <div className="icon-section">
-            <a href="https://github.com/Fred011" target="_blank">
+            <a
+              href="https://github.com/Fred011"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <div className="one-link">
                 <div className="link-elements">
                   <img
@@ -35,6 +39,7 @@ export class contact extends Component {
             <a
               href="https://www.linkedin.com/in/frederic-vannier/"
               target="_blank"
+              rel="noreferrer noopener"
             >
               <div className="one-link">
                 <div className="link-elements">

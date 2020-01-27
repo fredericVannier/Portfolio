@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
-import About from "../Pages/About";
+import { Link } from "react-scroll";
 
 export class Navbar extends Component {
   state = {
@@ -10,6 +9,8 @@ export class Navbar extends Component {
   toggleMenu = () => {
     this.setState({ active: !this.state.active });
   };
+
+  redirectAbout = () => {};
 
   render() {
     return (

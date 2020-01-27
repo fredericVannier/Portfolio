@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { Link } from "react-scroll";
+
 export class About extends Component {
   render() {
     return (
@@ -103,12 +105,20 @@ export class About extends Component {
             </div>
           </div>
 
-          <div className="transition-container about-transition">
-            <div className="transition-section">
-              <p className="transition-text">Check my projects</p>
-              <img src="./arrow-down.svg" className="slide-top" alt="arrow" />
+          <Link
+            activeClass="active"
+            to="projects-section"
+            spy={true}
+            smooth={true}
+            duration={600}
+          >
+            <div className="transition-container about-transition">
+              <div className="transition-section">
+                <p className="transition-text">Check my projects</p>
+                <img src="./arrow-down.svg" className="slide-top" alt="arrow" />
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     );

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { Link } from "react-scroll";
+
 export class Projects extends Component {
   render() {
     return (
@@ -10,6 +12,7 @@ export class Projects extends Component {
               href="https://fred011.github.io/Space-Explorer/"
               className="project-links"
               target="_blank"
+              rel="noreferrer noopener"
             >
               <div id="project-picture1"></div>
             </a>
@@ -34,6 +37,7 @@ export class Projects extends Component {
                     href="https://github.com/Fred011/Space-Explorer"
                     className="project-links"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     GITHUB
                   </a>
@@ -69,6 +73,7 @@ export class Projects extends Component {
                     href="https://github.com/Falconairio/Petsit"
                     className="project-links"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     GITHUB
                   </a>
@@ -81,6 +86,7 @@ export class Projects extends Component {
               href="https://topit.herokuapp.com/login"
               className="project-links"
               target="_blank"
+              rel="noreferrer noopener"
             >
               <div id="project-picture3"></div>
             </a>
@@ -105,6 +111,7 @@ export class Projects extends Component {
                     href="https://github.com/Fred011/Forum-BE"
                     className="project-links"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     BACK-END
                   </a>
@@ -112,6 +119,7 @@ export class Projects extends Component {
                     href="https://github.com/Fred011/Forum-FE"
                     className="project-links"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     FRONT-END
                   </a>
@@ -121,12 +129,20 @@ export class Projects extends Component {
           </div>
         </div>
 
-        <div className="transition-container project-transition">
-          <div className="transition-section">
-            <p className="transition-text">Wanna talk?</p>
-            <img src="./arrow-down.svg" className="slide-top" alt="arrow" />
+        <Link
+          activeClass="active"
+          to="contact-main-container"
+          spy={true}
+          smooth={true}
+          duration={600}
+        >
+          <div className="transition-container project-transition">
+            <div className="transition-section">
+              <p className="transition-text">Wanna talk?</p>
+              <img src="./arrow-down.svg" className="slide-top" alt="arrow" />
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     );
   }

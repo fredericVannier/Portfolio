@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "../components/Navbar";
-import About from "../Pages/About";
-import Projects from "../Pages/Projects";
-import Contact from "../Pages/Contact";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export class Home extends Component {
   state = {
@@ -17,7 +14,7 @@ export class Home extends Component {
   render() {
     return (
       <div className="main-container">
-        <Link onClick={() => this.toggleMenu()}>
+        <Link to="" onClick={() => this.toggleMenu()}>
           <Navbar />
         </Link>
 
