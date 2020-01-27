@@ -90,12 +90,10 @@ span {
   }
 }
 
-// @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 813px) {
 
-//   .transition-section {
-
-//     &.open {
-//       visibility: hidden;
-//     }
-//   }
-// }
+  p {
+    font-size: .9rem;
+    text-align: justify;
+  }
+}

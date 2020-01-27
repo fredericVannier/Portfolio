@@ -103,7 +103,7 @@ export class About extends Component {
             </div>
           </div>
 
-          <div className="transition-container">
+          <div className="transition-container about-transition">
             <div className="transition-section">
               <p className="transition-text">Check my projects</p>
               <img src="./arrow-down.svg" className="slide-top" alt="arrow" />

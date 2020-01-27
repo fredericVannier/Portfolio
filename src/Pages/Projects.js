@@ -40,8 +40,7 @@ export class Projects extends Component {
             </div>
           </div>
           <div className="project">
-            <div id="project-picture2">
-            </div>
+            <div id="project-picture2"></div>
             <div className="project-informations">
               <h3 className="project-title">Petsit</h3>
               <p className="project-details">
@@ -52,12 +51,13 @@ export class Projects extends Component {
                   Node JS, MongoDB, HBS, html, CSS and Javascript
                 </span>. <br />
                 <br />
-                This application gives the opportunity to pet owners to find
-                people to take care of their animals for a short period of time.
+                This application connects pet owners to find people to take care
+                of their animals for a short period of time.
                 <br />
                 <br />{" "}
                 <span>
-                  Disclaimer: Deployment isn't working at this time, I will redo this application with React soon!
+                  Disclaimer: Deployment isn't working at this time, I will redo
+                  this application with React soon!
                 </span>
               </p>
               <div className="links-section">
