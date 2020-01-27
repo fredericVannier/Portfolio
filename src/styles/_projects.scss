@@ -10,51 +10,51 @@
     justify-content: space-evenly;
     padding-top: 5vh;
 
+    #project-picture1 {
+      height: 350px;
+      width: 350px;
+      margin: 0 auto;
+      background-image: url("../img/spaceExplorer.png");
+      background-size: cover;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    #project-picture2 {
+      height: 350px;
+      width: 350px;
+      margin: 0 auto;
+      background-image: url("../img/petsit.png");
+      background-size: cover;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    #project-picture3 {
+      height: 350px;
+      width: 350px;
+      margin: 0 auto;
+      background-image: url("../img/topit.png");
+      background-size: cover;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
     .project {
       display: flex;
       flex-direction: column;
       justify-content: center;
       width: 25vw;
       text-align: center;
-
-      #project-picture1 {
-        height: 350px;
-        width: 350px;
-        margin: 0 auto;
-        background-image: url('../img/spaceExplorer.png');
-        background-size: cover;
-        transition: all 0.1s ease-in-out;
-  
-        &:hover {
-          transform: scale(1.05);
-        }
-      }
-
-      #project-picture2 {
-        height: 350px;
-        width: 350px;
-        margin: 0 auto;
-        background-image: url("../img/petsit.png");
-        background-size: cover;
-        transition: all 0.1s ease-in-out;
-  
-        &:hover {
-          transform: scale(1.05);
-        }
-      }
-  
-      #project-picture3 {
-        height: 350px;
-        width: 350px;
-        margin: 0 auto;
-        background-image: url("../img/topit.png");
-        background-size: cover;
-        transition: all 0.1s ease-in-out;
-  
-        &:hover {
-          transform: scale(1.05);
-        }
-      }
 
       .project-title {
         margin-top: 4vh;
@@ -83,5 +83,107 @@
 
   .transition-section {
     margin-top: 13vh;
+  }
+}
+
+@media only screen and (max-width: 813px) {
+  .projects-main-container {
+    height: 220vh;
+    width: 100vw;
+    background-image: none;
+
+    .projects-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-top: unset;
+
+      #project-picture1 {
+        height: 250px;
+        width: 100vw;
+        margin: 0 auto;
+        background-image: url("../img/spaceExplorer.png");
+        background-size: cover;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          transform: scale(1);
+        }
+      }
+
+      #project-picture2 {
+        height: 250px;
+        width: 100vw;
+        margin: 0 auto;
+        background-image: url("../img/petsit.png");
+        background-size: cover;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      #project-picture3 {
+        height: 250px;
+        width: 100vw;
+        margin: 0 auto;
+        background-image: url("../img/topit.png");
+        background-size: cover;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        text-align: justify;
+        margin: 0 auto;
+
+        .project-informations {
+          width: 90vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 2rem;
+        }
+
+        .project-title {
+          margin-top: 4vh;
+          text-transform: uppercase;
+          font-size: 1.5rem;
+        }
+
+        .project-details {
+          margin-top: 2vh;
+        }
+
+        .links-section {
+          display: flex;
+          width: 100%;
+          justify-content: space-evenly;
+          margin-top: 3vh;
+
+          .project-links {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: rgb(255, 188, 2);
+          }
+        }
+      }
+    }
+
+    .transition-section {
+      margin-top: unset;
+    }
+    .transition-container {
+      margin-top: 2vh;
+    }
   }
 }
