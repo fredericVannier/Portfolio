@@ -140,7 +140,7 @@ export class Projects extends Component {
           >
             <div className="transition-container project-transition">
               <div className="transition-section">
-                <p className="transition-text">Wanna talk?</p>
+                <p className="transition-text">Say hello</p>
                 <img src="./arrow-down.svg" className="slide-top" alt="arrow" />
               </div>
             </div>
